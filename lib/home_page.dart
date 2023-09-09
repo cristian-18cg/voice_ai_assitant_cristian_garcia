@@ -8,8 +8,26 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final speechToText = SpeechToText();
+  final flutterTts= FlutterTts();
+  String lastWords = '';
+  final OpenAIService openAIService = OpenAIService();
+  String? generatedContent;
+  String? generateImageUrl;
+  int start =200;
+  int delay = 200;
   @override
   Widget build(BuildContext context) {
     return Scaffold();//retorna un scaffold
   }
 }
+
+class OpenAIService {
+}
+
+class FlutterTts {
+}
+
+class SpeechToText {
+}
+
